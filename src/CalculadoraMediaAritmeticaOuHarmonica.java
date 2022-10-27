@@ -46,7 +46,7 @@ public class CalculadoraMediaAritmeticaOuHarmonica {
         } if (tipoDeMedia.equalsIgnoreCase("harmonica")) {
             return tipoDeMedia;
         } else {
-            System.out.println("O valor digitado não é o esperado. Tente novamente.");
+            System.out.println("O valor digitado não é o esperado (aritmetica ou harmonica). Tente novamente.");
             return getTipoDeMedia();
         }
     }
@@ -78,7 +78,7 @@ public class CalculadoraMediaAritmeticaOuHarmonica {
         while (soma == 0) {
             System.out.println("A soma dos inversos dos números providos é igual a zero, de modo que não é possível fazer a média harmônica");
             System.out.println("Tente novamente com outros números");
-            //return main(args); como faz isso?
+            //return main(args); não tô conseguindo fazer isso...
         }
         mediaHarmonica = lista.length / soma;
         return mediaHarmonica;
